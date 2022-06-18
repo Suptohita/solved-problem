@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 // selection sort
-int swap(int arr[], int n)
+void swap(int arr[], int n)
 {
-    int count = 0;
     for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
@@ -16,7 +15,6 @@ int swap(int arr[], int n)
             }
         }
     }
-    return count;
 }
 
 int main()
@@ -25,12 +23,10 @@ int main()
     int n = sizeof(arr) / sizeof(arr[0]);
     
     swap(arr, n);
-    
+
     // beacuse of array behaves like a pointer, it'll update automatically after calling swap()
     for (int i = 0; i < n; i++)
     {
         printf("%d ", arr[i]);
     }
 }
-
-
