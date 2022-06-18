@@ -1,4 +1,4 @@
-// 5. Make a function named check_array() which will take an array of integers and the size of that array N. It will return a boolean type whether this array has all values from 1 to N or not.
+// Make a function named check_array() which will take an array of integers and the size of that array N. It will return a boolean type whether this array has all values from 1 to N or not.
 
 #include <stdio.h>
 #include <string.h>
