@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // selection sort
-void swap(int arr[], int n)
+void sort(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -21,8 +21,8 @@ int main()
 {
     int arr[] = {10, 1, 2, 5, 19};
     int n = sizeof(arr) / sizeof(arr[0]);
-    
-    swap(arr, n);
+
+    sort(arr, n);
 
     // beacuse of array behaves like a pointer, it'll update automatically after calling swap()
     for (int i = 0; i < n; i++)
